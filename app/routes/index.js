@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
   res.render('index', {
     pageTitle: 'Home',
     artwork: pagePhotos,
-    speakers: pageSpeakers,    
+    speakers: pageSpeakers,
     pageID: 'home'
   });
 
