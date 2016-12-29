@@ -1,12 +1,4 @@
-[
-  {
-    "name":"Jane",
-    "title":"Meeting Time",
-    "message":"Would you consider moving the meeting time 30 minutes to about 6pm. It's tough to make it to the meetings on time right after work."
-  },
-  {
-    "name":"Roy",
-    "title":"Great Speaker",
-    "message":"I really enjoyed the speaker this month. Would love to hear another presentation."
-  }
-]
+
+[{"name":"Keith B.","title":"Notes","message":"Does anyone know how cool this is?"},{"name":"Keith B.","title":"Saving/ Writing posts to the feedback.json","message":"This is an example of using the fs node module to write new feedback to the feedback.json file."},{"name":"Jane","title":"Meeting Time","message":"Would you consider moving the meeting time 30 minutes to about 6pm. It's tough to make it to the meetings on time right after work."},{"name":"Roy","title":"Great Speaker","message":"I really enjoyed the speaker this month. Would love to hear another presentation."}]
+
+
