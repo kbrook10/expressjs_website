@@ -1,5 +1,7 @@
+
 $(function() {
   $.getJSON('api', updateFeedback);
+
 
   $('.feedback-form').submit(function(e) {
     e.preventDefault();
@@ -10,15 +12,22 @@ $(function() {
     }, updateFeedback);
   });
 
+
+//This function targets the className 'feedback-messages' and listens of a click...Once a click is heard it confirms that the target was the delete icon prior to running the ajax request...
   $('.feedback-messages').on('click', function(e) {
-      if (e.target.className == 'glyphicon glyphicon-remove') {
+      if(e.target.className == 'glyphicon glyphicon-remove') {
         $.ajax({
           url: 'api/' + e.target.id,
           type: 'DELETE',
-          success: updateFeedback
-        }); //ajax
-      } // the target is a delete button
+          success: updateFeedback,
+        });// ajax request
+      }// targets the delete button to trigger the ajax...
   }); //feedback messages
+
+
+
+//This renders the new messages from the Feedback form onto the page...Starting with an empty string and concatenating the bootstrap and loop of item data...
+
 
   function updateFeedback(data) {
    var output = '';
@@ -37,4 +46,5 @@ $(function() {
    });
    $('.feedback-messages').html(output);
   }
+
 });
