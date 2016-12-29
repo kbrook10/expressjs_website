@@ -7,7 +7,6 @@ router.get('/speakers', function(req, res) {
     var pagePhotos = [];
     var pageSpeakers = data.speakers;
 
-
   data.speakers.forEach(function(item) {
     pagePhotos = pagePhotos.concat(item.artwork);
   });
