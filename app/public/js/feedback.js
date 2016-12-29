@@ -1,3 +1,4 @@
+
 $(function() {
   $.getJSON('api', updateFeedback);
 
@@ -28,4 +29,5 @@ $(function() {
    });
    $('.feedback-messages').html(output);
   }
+
 });
