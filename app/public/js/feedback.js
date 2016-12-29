@@ -1,5 +1,7 @@
+
 $(function() {
   $.getJSON('api', updateFeedback);
+
 
   $('.feedback-form').submit(function(e) {
     e.preventDefault();
@@ -21,6 +23,10 @@ $(function() {
       }// targets the delete button to trigger the ajax...
   });
 
+
+
+//This renders the new messages from the Feedback form onto the page...Starting with an empty string and concatenating the bootstrap and loop of item data...
+
   function updateFeedback(data) {
    var output = '';
    $.each(data,function(key, item) {
@@ -38,4 +44,5 @@ $(function() {
    });
    $('.feedback-messages').html(output);
   }
+
 });
